@@ -1,0 +1,96 @@
+modmap:
+  - name: Global
+    remap:
+      SUPER_L: ALT_L
+      ALT_L: SUPER_L
+
+keymap:
+  - name: Global
+    remap:
+      ALT-a: C-a
+
+  - name: NotDevtool
+    application:
+      not: ["Gnome-terminal", "Cursor"]
+    remap:
+      ALT-t: C-t
+      ALT-l: C-l
+      ALT-w: C-w
+      ALT-x: C-x
+      ALT-a: C-a
+      ALT-f: C-f
+      ALT-k: C-k
+      ALT-r: C-r
+      ALT-y: C-h
+      ALT-z: C-z
+      ALT-s: C-s
+      ALT-ENTER: C-ENTER
+
+      ALT-c: C-c
+      ALT-v: C-v
+
+      ALT-1: C-1
+      ALT-2: C-2
+      ALT-3: C-3
+      ALT-4: C-4
+      ALT-5: C-5
+      ALT-6: C-6
+      ALT-7: C-7
+      ALT-8: C-8
+      ALT-9: C-9
+      ALT-0: C-0
+
+      ALT-SHIFT-LEFTBRACE: C-SHIFT-TAB
+      ALT-SHIFT-RIGHTBRACE: C-TAB
+
+      C-a: HOME
+      C-e: END
+      C-f: RIGHT
+      C-b: LEFT
+      C-n: DOWN
+      C-p: UP
+
+  - name: OnlyDevtool
+    application:
+      only: ["Gnome-terminal", "Cursor"]
+    remap:
+      ALT-c: C-SHIFT-c
+      ALT-v: C-SHIFT-v
+
+  - name: NotTerminal
+    application:
+      not: ["Gnome-terminal"]
+    remap:
+      C-h: BACKSPACE
+
+  - name: Cursor
+    application:
+      only: ["Cursor"]
+    remap:
+      C-a: HOME
+      C-e: END
+
+# 動作確認用
+#   - name: Cursor
+#     application:
+#       only: ["Cursor"]
+#     remap:
+#       C-q: q
+# 
+#   - name: Firefox
+#     application:
+#       only: ["firefox"]
+#     remap:
+#       C-q: q
+# 
+#   - name: Slack
+#     application:
+#       only: ["Slack"]
+#     remap:
+#       C-q: q
+# 
+#   - name: Slack
+#     application:
+#       only: ["Slack"]
+#     remap:
+#       C-q: q

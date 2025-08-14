@@ -1,0 +1,11 @@
+[Unit]
+Description=xremap
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/home/ryicoh/.nix-profile/bin/xremap --watch /home/ryicoh/.config/xremap/config.yaml
+# Environment=RUST_LOG=debug
+
+[Install]
+WantedBy=default.target
